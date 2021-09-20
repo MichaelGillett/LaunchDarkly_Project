@@ -27,3 +27,5 @@ The if statement on the _Index.cshtml_ file could be added to the _Index.cshtml.
 ## Feature Flag
 
 The feature flag used in this application has the key "_my-first-feature-flag_". It can be used to turn the new implementation on or off for all requests, or targeting can be used to conditionally turn on the feature for select users.
+
+When the flag is turned off the user will see "Welcome" on the Index page of the application. But, when the flag is enabled the message will read "🥳 LaunchDarkly is set up and working!".
