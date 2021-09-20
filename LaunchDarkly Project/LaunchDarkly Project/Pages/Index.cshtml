@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+
+@{
+    if (Model._myFirstFeatureFlag)
+    {
+        // The new implementation is only served when the feature flag is enabled
+
+        ViewData["Title"] = "LaunchDarkly and .NET home page";
+
+        <div class="text-center">
+            <h1 class="display-4">🥳 LaunchDarkly is set up and working!</h1>
+            <p>Learn about <a href="https://docs.launchdarkly.com/sdk/server-side/dotnet">LaunchDarkly and .NET</a>.</p>
+        </div>
+    }
+    else
+    {
+        // The default variation to serve is the existing implementation
+
+        ViewData["Title"] = "Home page";
+
+        <div class="text-center">
+            <h1 class="display-4">Welcome</h1>
+            <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        </div>
+    }
+}
