@@ -23,7 +23,10 @@ namespace LaunchDarkly_Project.Pages
 
         private User GetUser()
         {
+            // Simple User object creation
             // return LaunchDarkly.Sdk.User.WithKey(Guid.NewGuid().ToString());
+
+            // Consistent User object creation
             return LaunchDarkly.Sdk.User.WithKey(GetUserKey());
         }
 
